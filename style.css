@@ -1,0 +1,384 @@
+/*------LATTO*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+
+}
+.bg-color{
+    background-color: #f6f9f9;
+}
+.navbar
+{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.navbar .navbar-toggler{
+
+border-radius: 4px;
+
+border: 1px solid #15a4fa;
+
+padding: 0px 5px;
+transition-duration: .4s;
+}
+.navbar .navbar-toggler:hover{
+    background-color: #2d3950;
+}
+.navbar .navbar-toggler span{
+    
+display: block;
+    
+width: 30px;
+    
+height: 2px;
+    
+background: #15a4fa;
+    
+margin: 5px 0px;
+    
+border-radius: 5px;
+transition-duration: .6s;
+}
+.navbar .navbar-toggler span:hover{
+    background: #f6f9f9;
+}
+.navbar-nav .nav-link {
+   color: #5D6574;
+    font-size: 16px;
+    font-weight: 600;
+    /* padding: 0px 12px !important; */
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+.banner-section{
+   background-image: url(../images/banner-images.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-section .row{
+    min-height: 802px;
+    align-items: center;
+    
+}
+.banner-section p{
+    
+font-size: 20px;
+    
+color: #ffff;
+    
+margin: 40px 0px 35px;
+}
+.banner-section h1{
+    color: #ffff;
+    font-size: 126px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.banner-section span{
+    width: 100%;
+    height: 1px;
+    background: #15a4fa;
+    display: block;
+}
+.banner-section button{
+    padding: 12px 35px;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #15a4fa;
+    border-radius: 6px;
+}
+.banner-section button:hover{
+     color: #fff;
+     background-color: #15a4fa;
+}
+.banner-section a{
+    color: #ffff;
+    display: block;
+    transform: translate(0px, -37px);
+    -webkit-transform: translate(0px, -37px);
+     -moz-transform: translate(0px, -37px);
+    animation-name: Move-down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes Move-down{
+0%{transform: translate(0px, -37px);
+    -webkit-transform: translate(0px, -37px);
+     -moz-transform: translate(0px, -37px);}
+100%{
+    transform: translate(0px, -67px);
+    -webkit-transform: translate(0px, -67px);
+     -moz-transform: translate(0px, -67px);
+
+}
+}
+.about-section{
+
+padding: 75px 0px 100px;
+}
+h1{
+
+color: #2F3B52;
+
+margin-bottom: 21px;
+
+padding-top: 80px;
+}
+p{
+    color: #BFC0C0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.service-section{
+    padding: 50px 0px;
+}
+.service-section .row{}
+
+.service{
+
+text-align: center;
+
+padding-top: 25px;
+}
+.service h2{
+    
+margin: 25px 0px 17px;
+}
+
+.service p{
+    
+font-size: 15px;
+    
+color: #9999;
+    
+max-width: 3000px;
+    
+margin: auto;
+}
+.service span{
+    
+font-size: 60px;
+    
+color: #ffff;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5fc3ff+50,48baff+50 */
+    
+background: #5fc3ff; /* Old browsers */
+    
+background: -moz-linear-gradient(left,  #5fc3ff 50%, #48baff 50%); /* FF3.6-15 */
+    
+background: -webkit-linear-gradient(left,  #5fc3ff 50%,#48baff 50%); /* Chrome10-25,Safari5.1-6 */
+    
+background: linear-gradient(to right,  #5fc3ff 50%,#48baff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fc3ff', endColorstr='#48baff',GradientType=1 ); /* IE6-9 */
+    
+display: block;
+    
+width: 100px;
+    
+height: 100px;
+    
+margin: auto;
+    
+border-radius: 3px;
+    
+text-shadow: 0 1px 3px #3a3a3a;
+}
+.show-case-section{
+ text-align: center;
+ padding-bottom: 115px;
+}
+.show-case-section h1{
+
+}
+.show-case-section p{
+
+}
+.showcase-work{}
+.showcase{
+    position: relative;
+    margin-top: 30px;
+}
+.showcase img{}
+.showcase ul{
+    position: absolute;
+    bottom: 40%;
+    right: 50%;
+    transform: translate(50%, 40%);
+    opacity: 0;
+    transition-duration: .4s;
+    transition-delay: .2s;
+}
+.showcase:hover ul{
+    position: absolute;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    opacity: 1;
+}
+.showcase ul li{
+    padding: 7px;
+}
+
+.showcase ul li a{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid white;
+    display: block;
+    color: #ffff;
+    border-radius: 4px;
+}
+
+.showcase ul li a:hover{}
+
+/*.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2aa9f5a6;
+    top: 0;
+    left: 0;
+}*/
+.showcase::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: #2aa9f56b;
+    top: 0;
+    left: 0;
+    transition-duration: 0.5s;
+}
+.showcase:hover::after{
+    
+    height: 100%;
+}
+/*.showcase::before{
+    content: "";
+     position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2aa9f5a6;
+    top: 0;
+    left: 0;
+}*/
+.contact-section{
+    text-align: center;
+    background-image: url(../images/footer-bg-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 75px 0 100px;
+}
+.contact-section::before{
+    content: "";
+    background-color: #2d3950;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    }
+
+.contact-section::after{
+    content:"";
+}
+.contact-section h1{
+    color: #fff;
+
+}
+.contact-section p{
+    color: #999999;
+}
+form input{
+
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: 30px 21px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #999999;
+    background-color: #fff0;
+    background-clip: padding-box;
+    border: 1px solid #999999;
+    border-radius: .25rem;
+    }
+ label{
+    color: #999999; 
+    margin-left: 20px
+ }
+ form .btn{
+    padding: 11px 35px;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #15a4fa;
+    border-radius: 6px;
+    height: 100%;
+ }
+ form .btn:hover{
+    color: #fff;
+    background-color: #15a4fa;
+ }
+ footer{
+
+padding: 25px;
+
+}
+ footer p{
+    color: #999999;
+    font-size: 15px;
+    margin: 0;
+ }
+ footer nav{
+    
+ }
+
+ footer  ul{
+    
+ }
+ footer ul li{
+    
+padding-left: 5px;
+    
+padding-top: 5px;
+ }
+ footer ul li a{
+    
+width: 40px;
+    
+height: 40px;
+    
+background-color: #15a4fa;
+    
+display: block;
+    
+text-align: center;
+    
+color: #fff;
+    
+line-height: 40px;
+    
+border-radius: 4px;
+    
+border: 1px solid #15a4fa;
+transition-duration: .4s;
+ }
+  footer ul li a:hover{
+    background-color: transparent;
+  }
+  /*-------------------------------------*/
+  .col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 30px;
+}
+
